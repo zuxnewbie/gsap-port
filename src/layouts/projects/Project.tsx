@@ -74,6 +74,8 @@ export default function Projects() {
   const otherProjects = projects.filter((project) => !project.featured)
 
   return (
+    <>
+    <div className="revealer"></div>
     <div className="page-wrapper">
       <div className="projects-container">
         <h1 className="projects-title">
@@ -196,5 +198,6 @@ export default function Projects() {
         </div>
       </div>
     </div>
+    </>
   )
 }

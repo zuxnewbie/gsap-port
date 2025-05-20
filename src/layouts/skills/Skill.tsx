@@ -174,6 +174,8 @@ export default function Skills() {
   }, []);
 
   return (
+    <>
+    <div className="revealer"></div>
     <div className="page-wrapper" ref={sectionRef}>
       <div className="skills-container">
         <h1 className="skills-title">
@@ -261,5 +263,6 @@ export default function Skills() {
         </div>
       </div>
     </div>
+    </>
   );
 }
