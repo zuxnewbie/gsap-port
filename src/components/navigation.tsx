@@ -110,7 +110,7 @@ export default function Navigation() {
         <div className="md:hidden bg-background/95 backdrop-blur-md shadow-md">
           <nav className="container mx-auto px-4 py-6 flex flex-col space-y-4">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.path}
                 href={link.path}
                 className={`py-2 transition-colors ${
@@ -119,7 +119,7 @@ export default function Navigation() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </nav>
         </div>

@@ -4,6 +4,7 @@ import Image from "next/image"
 import { Github, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/styled"
 import "./style.css"
+import { useRevealer } from "@/hook/useRevealer"
 
 const projects = [
   {
@@ -73,6 +74,7 @@ export default function Projects() {
   const featuredProjects = projects.filter((project) => project.featured)
   const otherProjects = projects.filter((project) => !project.featured)
 
+  useRevealer();
   return (
     <>
     <div className="revealer"></div>

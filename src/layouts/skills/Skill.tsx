@@ -5,6 +5,7 @@ import { Code, Database, Wrench } from "lucide-react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./style.css";
+import { useRevealer } from "@/hook/useRevealer";
 
 const skillCategories = [
   {
@@ -106,8 +107,8 @@ const skillCategories = [
 ];
 
 export default function Skills() {
+  useRevealer();
   const sectionRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
     // Register ScrollTrigger plugin
     if (typeof window !== "undefined") {

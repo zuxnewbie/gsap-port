@@ -19,7 +19,7 @@ export default function About() {
           <div className="about-grid">
             <div className="about-image-container">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src="/me.jpg"
                 alt="Profile"
                 fill
                 className="about-image"
